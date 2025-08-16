@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login forum</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="loginContainer">
+        <h1 class="fp">Login</h1>
+
+        <form action="">
+            <h3>Email</h3>
+            <input type="email" class="inputCls" id="email">
+
+            <h3>Password</h3>
+            <input type="password" maxlength="8" class="inputCls" id="password">
+        </form>
+
+        <br>
+
+        <div class="btnDiv">
+            <button class="btn1" onclick="goRegister()">Register</button>
+            <button class="btn2" onclick="login()">Login</button>
+        </div>
+    </div>
+
+
+    <div class="container" style="display: none;" id="signupContainer">
+        <h1 class="fp">Register Here</h1>
+
+        <form action="">
+            <h3>User Name</h3>
+            <input type="text" class="inputCls" id="uname">
+
+            <h3>Email</h3>
+            <input type="email" class="inputCls" id="em">
+
+            <h3>Password</h3>
+            <input type="password" maxlength="8" class="inputCls" id="pw">
+            <p class="pwp">(password has eight characters including - A-Z, a-z, one number or special character.)</p>
+        </form>
+
+        <br>
+
+        <div class="btnDiv">
+            <button class="btn1" onclick="goLogin()">Login</button>
+            <button class="btn2" onclick="register()">Register</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

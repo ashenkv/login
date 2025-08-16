@@ -1,0 +1,108 @@
+body{
+    background: linear-gradient(rgb(255, 183, 49), #EB5B00);
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    font-family: sans-serif;
+    color: #3E3F5B;
+    font-family: "Varela Round", sans-serif;
+   }
+
+form{
+    width: 95%;
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #4C585B;
+    font-size: 15px;
+}
+input:focus{
+    border-color: rgb(238, 122, 27);
+}
+input::placeholder{
+    color: #FF8989;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+button{
+    width: 50%;
+    margin-top: 12px;
+    height: 45px;
+    padding:10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #E2F1E7;
+    font-size: 16px;
+}
+
+.btnDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn1{
+    background-color: #3E3F5B;
+}
+.btn1:hover{
+    transition: all 0.5s;
+    background-color: #2c2c41;
+}
+
+.btn2{
+    background-color: #EB5B00;
+}
+.btn2:hover{
+    transition: all 0.5s;
+    background-color: #da5300;
+}
+
+.pwp{
+    color: #4C585B;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 70%;
+        height: auto;
+        background-color: beige;
+        border-radius: 20px;
+        padding: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .container{
+        width: 25%;
+        height: auto;
+        background-color: beige;
+    }
+
+}
